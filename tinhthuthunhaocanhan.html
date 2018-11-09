@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //<5tr: 5%
+    //5-10tr:10%
+    //10-18tr:15%
+    //18-32tr:20%
+    //32-52tr:25%
+    //52-80tr:30%
+    //>80tr:35%
+
+    var tongthunhap = parseInt(prompt("Tong thu nhap ca nhan/thang(don vi trieu)"));
+    var cackhoanmienthue = parseInt(prompt("Cac khoan mien thue (neu co)"));
+    var thunhapchiuthue = tongthunhap - cackhoanmienthue;
+    var thuesuat = 5/100;
+    var thuesuat1 = 10/100;
+    var thuesuat2= 15/100;
+    var thuesuat3 =20/100;
+    var thuesuat4 =25/100;
+    var thuesuat5 =30/100;
+    var thuesuatt6 =35/100;
+
+
+    if(thunhapchiuthue <=5){
+        }else{
+        if(thunhapchiuthue > 5&& thunhapchiuthue <=10){
+            thuesuat = thuesuat1;
+        }else {
+            if(thunhapchiuthue > 10 && thunhapchiuthue <=18){
+                thuesuat = thuesuat2;
+            }else {
+                if(thunhapchiuthue > 18 && thunhapchiuthue <= 32){
+                    thuesuat = thuesuat3;
+                }else {
+                    if(thunhapchiuthue >32 && thunhapchiuthue <= 52){
+                        thuesuat = thuesuat4;
+                    }else {
+                        if(thunhapchiuthue >52 && thunhapchiuthue <=80){
+                            thuesuat = thuesuat5;
+                        }else {
+                            if(thunhapchiuthue >82){
+                                thuesuat = thuesuatt6
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+var thuephaidong = thunhapchiuthue * thuesuat;
+    alert(thuephaidong + "trieu vnd");
+</script>
+
+</body>
+</html>
